@@ -14,24 +14,13 @@
 
 
 @interface Dog : NSObject
-{
-    NSString *_name;
-    
-    id<DogDelegate> _delegate; // PART 2
-}
 
 - (id)initWithName:(NSString *)name;
 
-- (NSString *)name;
+@property (readonly, nonatomic) NSString *name;
+@property (weak, nonatomic) id<DogDelegate> delegate;
 
 - (void)doorbellDidRing;
-
-
-// PART 2
-- (id<DogDelegate>)delegate;
-- (void)setDelegate:(id<DogDelegate>)delegate;
-
 - (void)sit;
-////////
 
 @end

@@ -2,7 +2,7 @@
 
 @implementation Dog
 
-// PART 1
+@synthesize name = _name;
 
 - (id)initWithName:(NSString *)name
 {
@@ -13,29 +13,24 @@
     return self;
 }
 
-- (NSString *)name
-{
-    return _name;
-}
-
 - (void)growl
 {
-    printf("%s: Grrrrrr!\n", [[self name] UTF8String]);
+    printf("%s: Grrrrrr!\n", self.name.UTF8String);
 }
 
 - (void)bark
 {
-    printf("%s: Woof! Woof! Woof!\n", [[self name] UTF8String]);
+    printf("%s: Woof! Woof! Woof!\n", self.name.UTF8String);
 }
 
 - (void)wagTail
 {
-    printf("%s: [Wags tail.]\n", [[self name] UTF8String]);
+    printf("%s: [Wags tail.]\n", self.name.UTF8String);
 }
 
 - (NSString *)description
 {
-    return [self name];
+    return self.name;
 }
 
 //- (void)doorbellDidRing
@@ -50,16 +45,6 @@
 
 
 // PART 2
-
-- (id<DogDelegate>)delegate
-{
-    return _delegate;
-}
-
-- (void)setDelegate:(id<DogDelegate>)delegate
-{
-    _delegate = delegate;
-}
 
 - (void)doorbellDidRing
 {
@@ -78,9 +63,7 @@
 
 - (void)sit
 {
-    printf("%s: [Sits.]\n", [[self name] UTF8String]);
+    printf("%s: [Sits.]\n", self.name.UTF8String);
 }
-
-////////
 
 @end
