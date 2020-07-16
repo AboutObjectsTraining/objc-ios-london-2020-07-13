@@ -86,4 +86,9 @@
     [self.contentView addSubview:cell2];
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    NSLog(@"In %s", __func__);
+    [super touchesBegan:touches withEvent:event];
+}
+
 @end
