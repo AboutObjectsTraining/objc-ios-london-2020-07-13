@@ -46,9 +46,13 @@ const UIEdgeInsets CLNTextInsets = {
 }
 
 + (NSDictionary *)textAttributes {
-    // TODO: Cache the instance
-    return @{ NSFontAttributeName : [UIFont boldSystemFontOfSize:20],
-              NSForegroundColorAttributeName : UIColor.whiteColor };
+    static NSDictionary *textAttributes;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        textAttributes = @{ NSFontAttributeName : [UIFont boldSystemFontOfSize:20],
+                            NSForegroundColorAttributeName : UIColor.whiteColor };
+    });
+    return textAttributes;
 }
 
 - (void)setHighlighted:(BOOL)highlighted {
