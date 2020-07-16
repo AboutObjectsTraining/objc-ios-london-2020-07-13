@@ -16,9 +16,18 @@ IB_DESIGNABLE
 @property (getter=isHighlighted, nonatomic) BOOL highlighted;
 @property (class, readonly, nonatomic) NSDictionary *textAttributes;
 
+@property (nonatomic) IBInspectable CGFloat borderWidth;
+
 @end
 
 @implementation CLNCoolViewCell
+
+- (CGFloat)borderWidth {
+    return self.layer.borderWidth;
+}
+- (void)setBorderWidth:(CGFloat)borderWidth {
+    self.layer.borderWidth = borderWidth;
+}
 
 - (instancetype)initWithCoder:(NSCoder *)coder
 {
