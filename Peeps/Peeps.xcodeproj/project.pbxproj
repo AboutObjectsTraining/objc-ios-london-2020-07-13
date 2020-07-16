@@ -17,6 +17,7 @@
 		B4990D6524BDE7F300F303C2 /* ClassClusterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4990D6424BDE7F300F303C2 /* ClassClusterTests.m */; };
 		B4990D9024BE0D5B00F303C2 /* NSString+XYZAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B4990D8E24BE0D5B00F303C2 /* NSString+XYZAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4990D9124BE0D5B00F303C2 /* NSString+XYZAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B4990D8F24BE0D5B00F303C2 /* NSString+XYZAdditions.m */; };
+		B4A2DEC624BF5ADB00F62524 /* BlockLiteralTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A2DEC524BF5ADB00F62524 /* BlockLiteralTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		B4990D6424BDE7F300F303C2 /* ClassClusterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassClusterTests.m; sourceTree = "<group>"; };
 		B4990D8E24BE0D5B00F303C2 /* NSString+XYZAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+XYZAdditions.h"; sourceTree = "<group>"; };
 		B4990D8F24BE0D5B00F303C2 /* NSString+XYZAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+XYZAdditions.m"; sourceTree = "<group>"; };
+		B4A2DEC524BF5ADB00F62524 /* BlockLiteralTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockLiteralTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				B4990D5024BCBA6E00F303C2 /* PeepsTests.m */,
+				B4A2DEC524BF5ADB00F62524 /* BlockLiteralTests.m */,
 				B4990D6424BDE7F300F303C2 /* ClassClusterTests.m */,
 				B4990D5224BCBA6E00F303C2 /* Info.plist */,
 			);
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4990D5124BCBA6E00F303C2 /* PeepsTests.m in Sources */,
+				B4A2DEC624BF5ADB00F62524 /* BlockLiteralTests.m in Sources */,
 				B4990D6524BDE7F300F303C2 /* ClassClusterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
