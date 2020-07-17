@@ -10,13 +10,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CLNCoolController">
             <connections>
-                <outlet property="contentView" destination="f3I-9t-Kkg" id="N0k-cW-BKr"/>
-                <outlet property="textField" destination="Xqj-RZ-jDd" id="M7I-Wk-jKn"/>
                 <outlet property="view" destination="RAE-yX-xJp" id="AUp-uj-URb"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="RAE-yX-xJp" userLabel="Background View">
+        <view contentMode="scaleToFill" id="RAE-yX-xJp" customClass="CLNCoolView">
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
@@ -29,7 +27,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Add Cell"/>
                             <connections>
-                                <action selector="addCell" destination="-1" eventType="touchUpInside" id="tnF-yd-nb0"/>
+                                <action selector="addCell" destination="RAE-yX-xJp" eventType="touchUpInside" id="dUh-fK-we7"/>
                             </connections>
                         </button>
                         <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a label" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Xqj-RZ-jDd">
@@ -38,7 +36,7 @@
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             <connections>
-                                <outlet property="delegate" destination="-1" id="Q6Q-dX-lGR"/>
+                                <outlet property="delegate" destination="RAE-yX-xJp" id="vKa-hB-YJq"/>
                             </connections>
                         </textField>
                     </subviews>
@@ -76,6 +74,10 @@
             </subviews>
             <color key="backgroundColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="bp3-GA-LFv"/>
+            <connections>
+                <outlet property="contentView" destination="f3I-9t-Kkg" id="XPl-c0-wSL"/>
+                <outlet property="textField" destination="Xqj-RZ-jDd" id="t8n-cB-zlJ"/>
+            </connections>
             <point key="canvasLocation" x="-44" y="-209.11330049261085"/>
         </view>
     </objects>
