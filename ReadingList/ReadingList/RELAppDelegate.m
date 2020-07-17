@@ -5,5 +5,8 @@
 
 @implementation RELAppDelegate
 
+// Jonathan's Cell: 703-395-2407
+// Email: jonathan@aboutobjects.com
+// Twitter: @jlehr
 
 @end
